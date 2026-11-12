@@ -1,0 +1,6 @@
+{
+  "name": "Rodinný kalendář",
+  "description": "Sdílený rodinný online kalendář pro 4 členy rodiny se správou aktivit, kroužků, odvozů a společného plánování.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

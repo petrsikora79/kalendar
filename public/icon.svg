@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#312E81" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner calendar card -->
+  <g filter="url(#shadow)">
+    <rect x="76" y="96" width="360" height="340" rx="36" fill="#FFFFFF" />
+    
+    <!-- Top red/indigo header bar of calendar -->
+    <path d="M 76 132 C 76 112.118 92.118 96 112 96 L 400 96 C 419.882 96 436 112.118 436 132 L 436 176 L 76 176 Z" fill="#6366F1" />
+    
+    <!-- Calendar binder rings -->
+    <rect x="144" y="74" width="24" height="48" rx="12" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="4" />
+    <rect x="344" y="74" width="24" height="48" rx="12" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="4" />
+  </g>
+
+  <!-- 4 Family Dots / Members represented on the calendar -->
+  <g transform="translate(116, 210)">
+    <!-- Member 1: Táta (Blue) -->
+    <circle cx="40" cy="40" r="26" fill="#2563EB" />
+    <text x="40" y="47" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">T</text>
+    
+    <!-- Member 2: Máma (Pink) -->
+    <circle cx="106" cy="40" r="26" fill="#DB2777" />
+    <text x="106" y="47" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">M</text>
+
+    <!-- Member 3: Syn (Green) -->
+    <circle cx="172" cy="40" r="26" fill="#16A34A" />
+    <text x="172" y="47" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">S</text>
+
+    <!-- Member 4: Dcera (Orange) -->
+    <circle cx="238" cy="40" r="26" fill="#EA580C" />
+    <text x="238" y="47" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">D</text>
+
+    <!-- Week grid lines -->
+    <rect x="20" y="94" width="240" height="12" rx="6" fill="#E2E8F0" />
+    <rect x="20" y="122" width="180" height="12" rx="6" fill="#F1F5F9" />
+    <rect x="20" y="150" width="210" height="12" rx="6" fill="#E2E8F0" />
+
+    <!-- Active event highlight bar -->
+    <rect x="20" y="178" width="140" height="16" rx="8" fill="#4F46E5" />
+  </g>
+</svg>
